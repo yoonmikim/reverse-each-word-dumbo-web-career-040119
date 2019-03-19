@@ -17,9 +17,10 @@ def reverse_each_word(str)
 end
 
 def reverse_each_word(str)
-  str.split.collect {|word| word.reverse}.join(" ")
+  str.reverse.split.reverse.join(" ")
 end
 
 def reverse_each_word(str)
-  str.reverse.split.reverse.join(" ")
+  str.split.collect {|word| word.reverse}.join(" ")
 end
+
